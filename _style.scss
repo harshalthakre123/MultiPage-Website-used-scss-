@@ -1,0 +1,39 @@
+@mixin footer(){
+#footer{
+    margin-top: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    .footermain{
+        margin-top: 8vh;
+        height: 45vh;
+        display: flex; 
+        div{
+            width: 55vh;
+            line-height: 25px;
+            a{
+                color: rgb(94, 93, 93);
+                text-decoration: none;
+            }
+        }
+        .footermain div a:hover{
+            color: blue;
+            text-decoration: underline;
+            }
+    }
+    .footerbottom{
+        height: 10vh;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        span{
+            a{
+                text-decoration: none;
+                color: black;
+                margin: 5px;
+            }
+        }
+    }
+} 
+}

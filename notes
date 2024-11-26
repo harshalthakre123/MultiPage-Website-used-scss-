@@ -1,5 +1,0 @@
-1...transition: background-color time(3s) type(1. ease 2. ease in 3. ease in out 4. ease out)
-2...transition: height/width time(4s) type ease(1. ease 2. ease in 3. ease in out 4. ease out)
-we can use transition in multi-properties of hover we can use
-3...transition: all time(4s) type ease(1. ease 2. ease in 3. ease in out 4. ease out)
-4...transition: height/width time(4s) type ease, background-color time() transiton type(1. ease 2. ease in 3. ease in out 4. ease out)

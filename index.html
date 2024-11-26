@@ -16,7 +16,7 @@
             <div class="pagelogo"><a href="#home"><img src="./navbar logo.png" alt="web-logo" height="70px" width="250"></a></div>
             <ul class="navitems">
                 <li><a href="#cars">Cars <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
-                <li><a href="#new-upcoming">New-Upcoming<i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
                 <li><a href="#reviews-and-news">Reviews & News
                     <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
                 <!-- <li><a href="#about-us">About-us <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>                    -->
@@ -35,23 +35,76 @@
         <div class="hero">
             <h1 class="quote"><Strong><em>It's not just a car or machine,<br> It's an emotion.</em>
             </Strong></h1>
-            <h1>Choose Your Car:</h1>
-            <label for="select-option"></label>
-            <ul class="hero-search">
-                <li>
-                    <input type="radio" name="select-option" value="Choose Car Brand">By Brand
-                </li>
-                <li>
-                    <input type="radio" name="select-option" value="Choose Car Type">By Car Type
-                </li>    
-                <li>
-                    <input type="radio" name="select-option" value="Choose Car Budget">By Budget
-                </li>
+            
+            <div class="hero-search">
+                <h1>Choose Your Car:</h1>
+
+                <label for="searchtype"></label>
+
+                <input type="radio" id="car-brand" name="searchtype" value="Choose Car Brand" checked>
+                <label for="car-brand"><strong>By Brand</strong></label>
+
+                <input type="radio" id="car-type" name="searchtype" value="Choose Car Type">
+                <label for="car-type"><strong>By Car Type</strong></label>
+                
+                <input type="radio" id="car-budget" name="searchtype" value="Choose Car Budget">
+                <label for="car-budget"><strong>By Budget</strong></label>
+                
+                <br>
+                
+                <select id="car-brands" >
+                        <option value="#audi" selected>Select Car Brand</option>
+                        <option value="audi"><a href="#">Audi</a></option>
+                        <a href="#bmw"><option value="bmw">BMW</option></a>
+                        <option value="citroen">Citroen</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="isuzu">Isuzu</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="land-rover" >Land Rover</option>
+                        <option value="mahindra">Mahindra</option>
+                        <option value="maruti-suzuki">Maruti Suzuki</option>
+                        <option value="mercedes-benz">Mercedes-Benz</option>
+                        <option value="mg">MG</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="renault">Renault</option>
+                        <option value="Skoda">Skoda</option>
+                        <option value="tata-motors">Tata Motors</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                </select>
+                
+                <select id="car-types">
+                        <option value="#" selected>Select Car type</option>
+                        <option value="hatchback">Hatchback</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv" selected>SUV</option>
+                        <option value="muv">MUV</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="super-luxury">Super Luxury</option>
+                        <option value="convertible">Convertible</option>
+                        <option value="coupe">Coupe</option>
+                        <option value="pickup-truck">Pickup Truck</option>
+                        <option value="minivan">Minivan</option>
+                </select>
+                
+                <select id="car-budgets">
+                        <option value="#" selected>Select Car Budget</option>
+                        <option value="1-5lakh">1 - 5 Lakh</option>
+                        <option value="5-10lakh">5 - 10 Lakh</option>
+                        <option value="10-15lakh">10 - 15 Lakh</option>
+                        <option value="15-20lakh" selected>15 - 20 Lakh</option>
+                        <option value="20-35lakh">20 - 35 Lakh</option>
+                        <option value="35-50lakh">35 - 50 Lakh</option>
+                        <option value="50lakh-1crore">50 Lakh - 1 Crore</option>
+                        <option value="above-1-crore">Above 1 Crore</option>
+                </select>
+                          
             </div>
-
         </div>
-
-
     </div>
     <!-----------------------------------------Hero Section End-------------------------------------->
 
@@ -65,8 +118,59 @@
 
     <!-------------  --------------------------Footer Start ---------------------------------------------->
     <footer id="footer">
-        <div>
-
+        <hr>
+        <div class="footermain">
+            <div>
+                <h3>About Vehicals-Onroad</h3>
+                <a href="#">About</a><br>
+                <a href="#">Career With Us</a><br>
+                <a href="#">Terms & Conditions</a><br>
+                <a href="#">Privacy Policies</a><br>
+                <a href="#">Corporate Policies</a><br>
+                <a href="#">Investors</a><br>
+                <a href="#">FAQs</a><br>
+            </div>
+            <div>
+                <h3>Connect With Us</h3>
+                <a href="#">Feedback</a><br>
+                <a href="#">Contact Us</a><br>
+                <a href="#">Advertise with Us</a><br>
+                <a href="#">Became Partner Dealer</a><br>
+            </div>
+            <div>
+                <h3>Others</h3>
+                <a href="#">Bike-Onroad</a><br>
+                <a href="#">Bus-Onroad</a><br>
+                <a href="#">Truck-Onroad</a><br>
+                <a href="#">Tractors-Onroad</a><br>
+                <a href="#">Insurance-Service</a><br>
+                <a href="#">Car Sales Trends</a><br>
+            </div>
+            <div>
+                <h3>Experience Vehicles-Onroad App</h3>
+                <br>
+                <a href="#"><img src="./appstore.avif" alt="appstore"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><img src="./playstore.avif" alt="playstore"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footerbottom">
+            <span>
+                <a href="#"><Strong>India/English</Strong></a>
+                <a href="#">Privacy</a>
+                <a href="#">Legal</a>
+                <a href="#">CSR Policy</a>
+                <a href="#">Sitemap</a>
+            </span>
+            <span>
+                <a href="#">Connect With Us:</a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #000000;"></i></a>
+            </span>
         </div>
     </footer>
         <!--------------------------------------------Footer End ------------------------------------------------>

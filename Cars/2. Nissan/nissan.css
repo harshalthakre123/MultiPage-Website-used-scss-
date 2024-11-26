@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#brand h1 {
+  height: auto;
+  margin: 1%;
+  margin-left: 15vw;
+}
+#brand .brand {
+  margin-top: 5vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20vw 53vw 25vw;
+  gap: 1vw;
+}
+#brand .brand .brand-cars {
+  display: grid;
+  grid-template-rows: 25vh;
+  align-items: center;
+  gap: 5vh;
+}
+#brand .brand .brand-cars div {
+  padding: 3vh;
+  border: 0.5px solid rgb(70, 70, 70);
+  border-radius: 2vh;
+}/*# sourceMappingURL=nissan.css.map */

@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 #navbar{
-    height: 10%;
+    height: 11vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 2px 0px 10px 4px gray;
 
     ul{
         margin-left: -5%;
@@ -32,7 +33,8 @@
         border: none;
         height: 35px;
         width: 280px;
-        border: 2px solid black;
+        box-shadow: 1px 1px 3px 3px gray;
+        // border: 2px solid black;
         border-radius: 10px;
         }
         a{
@@ -45,32 +47,114 @@
 
 // Hero Section Start
 #hero{
-    height: 100vh;
+    height: 95vh;
     width: 100%;
-    background-image: url('./home\ hero\ sec.jpg');
+    background-image: url('/home\ hero\ sec.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: center;
     .hero{
-        height: 45vw;
-        background-color: rgba(0, 0, 0, 0.4);
+        height: 95vh;
+        background-color: rgba(0, 0, 0, 0.2);
         color: white;
         justify-items: center;
+        text-align: center;
         .quote{
-            text-align: center;
-            padding-top: 3%;
-            padding-bottom: 11%;
+            padding-top: 2vh;
+            padding-bottom: 25vh;
             font-size: 40px;  
         }
-        h1{
-            font-size: 35px;
-        }
-        ul{
-            display: flex;
-            gap: 20px;
-            font-size: 20px;
-            list-style: none;
+        .hero-search{
+            height: 20vh;
+            width: 32vw;
+            background-color: rgba(58, 57, 57, 0.226);
+            justify-items: center;
+            line-height: 35px;
             
+            h1{
+                font-size: 30px;
+            }
+            strong{
+                font-size: 20px;
+                margin-right: 15px;
+            }
+            #car-brands{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
+            
+            #car-brand:checked~#car-brands{
+                display: block;
+            }
+            
+            #car-types{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
+            
+            #car-type:checked~#car-types{
+                display: block;
+            }
+            
+            #car-budgets{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
+            
+            #car-budget:checked~#car-budgets{
+                display: block;
+            }
+                          
+         
         }
     }   
 }
+
+
+#footer{
+    margin-top: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    .footermain{
+        margin-top: 8vh;
+        height: 45vh;
+        display: flex; 
+        div{
+            width: 55vh;
+            line-height: 25px;
+            a{
+                color: rgb(94, 93, 93);
+                text-decoration: none;
+            }
+        }
+        .footermain div a:hover{
+            color: blue;
+            text-decoration: underline;
+            }
+    }
+    .footerbottom{
+        height: 10vh;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        span{
+            a{
+                text-decoration: none;
+                color: black;
+                margin: 5px;
+            }
+        }
+    }
+} 
