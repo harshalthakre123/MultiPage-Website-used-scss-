@@ -4,41 +4,111 @@
   box-sizing: border-box;
 }
 
-#navbar {
+#header #navbar {
   height: 11vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 2px 0px 10px 4px gray;
+  border-bottom: 1px solid black;
 }
-#navbar ul {
-  margin-left: -5%;
+#header #navbar a {
+  margin-left: 4vw;
+}
+#header #navbar .search {
+  margin-left: 40vw;
+  display: flex;
+  align-items: center;
+}
+#header #navbar .search input {
+  border: none;
+  height: 6vh;
+  width: 22vw;
+  box-shadow: 1px 1px 3px 3px gray;
+  border-radius: 10px;
+}
+#header #navbar .search a {
+  margin-left: -25px;
+  margin-right: 4vw;
+}
+#header #navbar .loginbtn {
+  border: 1px solid black;
+  width: 7vw;
+  height: 5vh;
+  border-radius: 2vh;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+}
+#header #nav2 {
+  height: 6vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header #nav2 a {
+  color: black;
+  text-decoration: none;
+}
+#header #nav2 .nav2-opt {
+  margin-right: 50%;
   display: flex;
   list-style: none;
   font-size: large;
   font-weight: bold;
   gap: 15px;
 }
-#navbar ul a {
+#header #nav2 .nav2-opt a {
+  margin-bottom: 2vh;
   color: black;
   text-decoration: none;
 }
-#navbar .search {
-  margin-left: 12%;
-  display: flex;
-  align-items: center;
+#header #nav2 .nav2-opt .nc-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
 }
-#navbar .search input {
-  border: none;
-  height: 35px;
-  width: 280px;
-  box-shadow: 1px 1px 3px 3px gray;
-  border-radius: 10px;
+#header #nav2 .nav2-opt .nc:hover .nc-dd {
+  display: block;
 }
-#navbar .search a {
-  margin-left: -25px;
+#header #nav2 .nav2-opt .nr-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
+}
+#header #nav2 .nav2-opt .nr:hover .nr-dd {
+  display: block;
+}
+#header #nav2 .nav2-opt .cs-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
+  min-width: 18vw;
+}
+#header #nav2 .nav2-opt .cs:hover .cs-dd {
+  display: block;
 }
 
 #hero {
@@ -49,6 +119,7 @@
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 #hero .hero {
   height: 95vh;
@@ -76,60 +147,47 @@
   font-size: 20px;
   margin-right: 15px;
 }
-#hero .hero .hero-search #car-brands {
-  display: none;
-  width: 28vw;
-  height: 5vh;
-  text-align: center;
-  font-size: large;
+
+#brandwise-cars h1 {
+  margin: 5vh;
+  margin-left: 5vw;
 }
-#hero .hero .hero-search #car-brand:checked ~ #car-brands {
-  display: block;
+#brandwise-cars .brandlogos {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  display: flex;
+  flex-wrap: wrap;
 }
-#hero .hero .hero-search #car-types {
-  display: none;
-  width: 28vw;
-  height: 5vh;
-  text-align: center;
-  font-size: large;
-}
-#hero .hero .hero-search #car-type:checked ~ #car-types {
-  display: block;
-}
-#hero .hero .hero-search #car-budgets {
-  display: none;
-  width: 28vw;
-  height: 5vh;
-  text-align: center;
-  font-size: large;
-}
-#hero .hero .hero-search #car-budget:checked ~ #car-budgets {
-  display: block;
+#brandwise-cars .brandlogos div {
+  padding-left: 15px;
+  width: 15vw;
+  height: 15vh;
+  border: 0.5px solid black;
 }
 
-#footer {
+#bottom #footer {
   margin-top: 10vh;
   margin-left: 3vw;
   margin-right: 3vw;
 }
-#footer .footermain {
+#bottom #footer .footermain {
   margin-top: 8vh;
   height: 45vh;
   display: flex;
 }
-#footer .footermain div {
+#bottom #footer .footermain div {
   width: 55vh;
   line-height: 25px;
 }
-#footer .footermain div a {
+#bottom #footer .footermain div a {
   color: rgb(94, 93, 93);
   text-decoration: none;
 }
-#footer .footermain .footermain div a:hover {
+#bottom #footer .footermain .footermain div a:hover {
   color: blue;
   text-decoration: underline;
 }
-#footer .footerbottom {
+#bottom #footer .footerbottom {
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -137,7 +195,7 @@
   margin-left: 3vw;
   margin-right: 3vw;
 }
-#footer .footerbottom span a {
+#bottom #footer .footerbottom span a {
   text-decoration: none;
   color: black;
   margin: 5px;

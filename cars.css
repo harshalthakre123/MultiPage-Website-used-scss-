@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#header #navbar {
+  height: 11vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+#header #navbar a {
+  margin-left: 4vw;
+}
+#header #navbar .search {
+  margin-left: 40vw;
+  display: flex;
+  align-items: center;
+}
+#header #navbar .search input {
+  border: none;
+  height: 6vh;
+  width: 22vw;
+  box-shadow: 1px 1px 3px 3px gray;
+  border-radius: 10px;
+}
+#header #navbar .search a {
+  margin-left: -25px;
+  margin-right: 4vw;
+}
+#header #navbar .loginbtn {
+  border: 1px solid black;
+  width: 7vw;
+  height: 5vh;
+  border-radius: 2vh;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+}
+#header #nav2 {
+  height: 6vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header #nav2 a {
+  color: black;
+  text-decoration: none;
+}
+#header #nav2 .nav2-opt {
+  margin-right: 50%;
+  display: flex;
+  list-style: none;
+  font-size: large;
+  font-weight: bold;
+  gap: 15px;
+}
+#header #nav2 .nav2-opt a {
+  margin-bottom: 2vh;
+  color: black;
+  text-decoration: none;
+}
+#header #nav2 .nav2-opt .nc-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
+}
+#header #nav2 .nav2-opt .nc:hover .nc-dd {
+  display: block;
+}
+#header #nav2 .nav2-opt .nr-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
+}
+#header #nav2 .nav2-opt .nr:hover .nr-dd {
+  display: block;
+}
+#header #nav2 .nav2-opt .cs-dd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: -1vw;
+  padding-left: 1vw;
+  font-weight: normal;
+  min-width: 18vw;
+}
+#header #nav2 .nav2-opt .cs:hover .cs-dd {
+  display: block;
+}
+
+#brand h1 {
+  height: auto;
+  margin: 1%;
+  margin-left: 15vw;
+}
+#brand .brand {
+  margin-top: 5vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20vw 53vw 22vw;
+  gap: 1vw;
+}
+#brand .brand .brand-cars {
+  display: grid;
+  grid-template-rows: 25vh;
+  align-items: center;
+  gap: 5vh;
+}
+#brand .brand .brand-cars .dispcar {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+  border: 0.5px solid rgb(70, 70, 70);
+  border-radius: 2vh;
+  padding: 3vh;
+  line-height: 3vh;
+}
+#brand .brand .brand-cars .dispcar .discountbtn {
+  text-decoration: none;
+  background-color: rgb(0, 48, 136);
+  color: white;
+  border: 8px solid rgb(0, 48, 136);
+  border-radius: 5px;
+}
+#brand .brand .brand-cars .dispcar a {
+  text-decoration: none;
+  color: indigo;
+}
+
+#bottom #footer {
+  margin-top: 10vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+#bottom #footer .footermain {
+  margin-top: 8vh;
+  height: 45vh;
+  display: flex;
+}
+#bottom #footer .footermain div {
+  width: 55vh;
+  line-height: 25px;
+}
+#bottom #footer .footermain div a {
+  color: rgb(94, 93, 93);
+  text-decoration: none;
+}
+#bottom #footer .footermain .footermain div a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#bottom #footer .footerbottom {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+#bottom #footer .footerbottom span a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+}/*# sourceMappingURL=cars.css.map */

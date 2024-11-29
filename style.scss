@@ -1,51 +1,15 @@
+@import '_style.scss';
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-#navbar{
-    height: 11vh;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 2px 0px 10px 4px gray;
-
-    ul{
-        margin-left: -5%;
-        display: flex;
-        list-style: none;
-        font-size: large;
-        font-weight: bold;
-        gap: 15px;
-        a{
-        color: black;
-        text-decoration: none;
-        
-        }            
-    }
-    .search{ 
-        margin-left: 12%;
-        display: flex;
-        align-items: center;
-        input {
-        border: none;
-        height: 35px;
-        width: 280px;
-        box-shadow: 1px 1px 3px 3px gray;
-        // border: 2px solid black;
-        border-radius: 10px;
-        }
-        a{
-            margin-left: -25px;
-        }
-        
-    }
+#header{
+    @include headnav();
 }
-// Navbar End-----------------------------------------------------------------------------------------------------
+// Navbar End-------------------------------------------------------------------------------------------- 
 
-// Hero Section Start
+// Hero Section Start------------------------------------------------------------------------------------
 #hero{
     height: 95vh;
     width: 100%;
@@ -54,6 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
+    margin-bottom: 10vh;
     .hero{
         height: 95vh;
         background-color: rgba(0, 0, 0, 0.2);
@@ -79,82 +44,107 @@
                 font-size: 20px;
                 margin-right: 15px;
             }
-            #car-brands{
-                display: none;
-                width: 28vw;
-                height: 5vh;
-                text-align: center;
-                font-size: large;
-            }
+            // #car-brands{
+            //     display: none;
+            //     width: 28vw;
+            //     height: 5vh;
+            //     text-align: center;
+            //     font-size: large;
+            // }
             
-            #car-brand:checked~#car-brands{
-                display: block;
-            }
+            // #car-brand:checked~#car-brands{
+            //     display: block;
+            // }
             
-            #car-types{
-                display: none;
-                width: 28vw;
-                height: 5vh;
-                text-align: center;
-                font-size: large;
-            }
+            // #car-types{
+            //     display: none;
+            //     width: 28vw;
+            //     height: 5vh;
+            //     text-align: center;
+            //     font-size: large;
+            // }
             
-            #car-type:checked~#car-types{
-                display: block;
-            }
+            // #car-type:checked~#car-types{
+            //     display: block;
+            // }
             
-            #car-budgets{
-                display: none;
-                width: 28vw;
-                height: 5vh;
-                text-align: center;
-                font-size: large;
-            }
+            // #car-budgets{
+            //     display: none;
+            //     width: 28vw;
+            //     height: 5vh;
+            //     text-align: center;
+            //     font-size: large;
+            // }
             
-            #car-budget:checked~#car-budgets{
-                display: block;
-            }
+            // #car-budget:checked~#car-budgets{
+            //     display: block;
+            // }
                           
          
         }
     }   
 }
+// Hero Section End---------------------------------------------------------------------------------------------
 
-
-#footer{
-    margin-top: 10vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    .footermain{
-        margin-top: 8vh;
-        height: 45vh;
-        display: flex; 
-        div{
-            width: 55vh;
-            line-height: 25px;
-            a{
-                color: rgb(94, 93, 93);
-                text-decoration: none;
-            }
-        }
-        .footermain div a:hover{
-            color: blue;
-            text-decoration: underline;
-            }
+#brandwise-cars{
+    h1{
+        margin: 5vh;
+        margin-left: 5vw;
     }
-    .footerbottom{
-        height: 10vh;
+    .brandlogos{
+        margin-left: 4vw;
+        margin-right: 4vw;
         display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        span{
-            a{
-                text-decoration: none;
-                color: black;
-                margin: 5px;
-            }
+        flex-wrap: wrap;
+        div{
+            padding-left: 15px;
+            width: 15vw;
+            height: 15vh;
+            border: .5px solid black;            
         }
-    }
-} 
+        
+    }                                                                                                                                                                                                                                                                                                   
+}
+
+#bottom{
+    @include footer();
+}
+
+
+// #footer{
+//     margin-top: 10vh;
+//     margin-left: 3vw;
+//     margin-right: 3vw;
+//     .footermain{
+//         margin-top: 8vh;
+//         height: 45vh;
+//         display: flex; 
+//         div{
+//             width: 55vh;
+//             line-height: 25px;
+//             a{
+//                 color: rgb(94, 93, 93);
+//                 text-decoration: none;
+//             }
+//         }
+//         .footermain div a:hover{
+//             color: blue;
+//             text-decoration: underline;
+//             }
+//     }
+//     .footerbottom{
+//         height: 10vh;
+//         display: flex;
+//         justify-content:space-between;
+//         align-items: center;
+//         margin-left: 3vw;
+//         margin-right: 3vw;
+//         span{
+//             a{
+//                 text-decoration: none;
+//                 color: black;
+//                 margin: 5px;
+//             }
+//         }
+//     }
+// } 

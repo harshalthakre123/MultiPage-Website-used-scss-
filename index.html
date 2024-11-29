@@ -13,19 +13,48 @@
     <Header id="header">
         
         <nav id="navbar">
-            <div class="pagelogo"><a href="#home"><img src="./navbar logo.png" alt="web-logo" height="70px" width="250"></a></div>
-            <ul class="navitems">
-                <li><a href="#cars">Cars <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
-                <li><a href="#reviews-and-news">Reviews & News
-                    <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>
-                <!-- <li><a href="#about-us">About-us <i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a></li>                    -->
-            </ul>
+            <div class="pagelogo"><a href="#home"><img src="./navbar logo.png" alt="web-logo" height="70px" width="250" ></a></div>
             <div class="search">
                 <label for="#search"></label>
                 <input type="text" id="search" placeholder="  Search">
                 <div><a href="#search"><i class="fa-solid fa-magnifying-glass fa-" style="color: #000000;"></i></a></div>
-            </div> 
+                <a class="loginbtn" href="#loginbutton">Login/Signup</a>
+                
+            </div>  
+              
+        </nav>
+        <nav id="nav2">
+            <ul class="nav2-opt">
+                <li class="nc"><a href="#">New Cars<i class="fa-solid fa-angle-down" style="color: #1e3050;"></i> </a>
+                    <div class="nc-dd">
+                        <a href="#brandwise-cars">Car Brands</a><br>
+                        <a href="#">Body Types</a><br>
+                        <a href="#">Electric Cars</a><br>
+                        <a href="#">New Launched Cars</a><br>
+                        <a href="#">Upcoming Cars</a><br>
+                        <a href="#">Find Car Dealer</a><br>
+                    </div>
+                </li>
+                <li class="nr"><a href="#">News & Reviews<i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a>
+                    <div class="nr-dd">
+                        <a href="#">News</a><br>
+                        <a href="#">Car Expert Reviews</a><br>
+                        <a href="#">Video Reviews</a><br>
+                        <a href="#">User Reviews</a><br>
+                        <a href="#">Tips & Adivice</a><br>
+                    </div>
+                </li>
+                <li class="cs"><a href="#">Car-Services<i class="fa-solid fa-angle-down" style="color: #1e3050;"></i></a>
+                    <div class="cs-dd">
+                        <a href="#">SmartCar Connected Device</a><br>
+                        <a href="#">Revv Car Subscription</a><br>
+                        <a href="#">View All Services</a><br>
+                    </div>
+                </li>
+            </ul>
+            <a class="location" href="#location">Location <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a>
+            
+
         </nav>
     </Header>
     <!----------------------------------------Header End ------------------------------------------------>
@@ -41,67 +70,57 @@
 
                 <label for="searchtype"></label>
 
-                <input type="radio" id="car-brand" name="searchtype" value="Choose Car Brand" checked>
+                <input type="radio" id="car-brand" name="searchtype" value="Choose Car Brand">
                 <label for="car-brand"><strong>By Brand</strong></label>
 
-                <input type="radio" id="car-type" name="searchtype" value="Choose Car Type">
-                <label for="car-type"><strong>By Car Type</strong></label>
+                <input type="radio" id="car-type" name="searchtype" value="Choose Body Type">
+                <label for="car-type"><strong>By Body Type</strong></label>
                 
                 <input type="radio" id="car-budget" name="searchtype" value="Choose Car Budget">
                 <label for="car-budget"><strong>By Budget</strong></label>
                 
                 <br>
                 
-                <select id="car-brands" >
-                        <option value="#audi" selected>Select Car Brand</option>
-                        <option value="audi"><a href="#">Audi</a></option>
-                        <a href="#bmw"><option value="bmw">BMW</option></a>
-                        <option value="citroen">Citroen</option>
-                        <option value="honda">Honda</option>
-                        <option value="hyundai">Hyundai</option>
-                        <option value="isuzu">Isuzu</option>
-                        <option value="jaguar">Jaguar</option>
-                        <option value="jeep">Jeep</option>
-                        <option value="kia">Kia</option>
-                        <option value="land-rover" >Land Rover</option>
-                        <option value="mahindra">Mahindra</option>
-                        <option value="maruti-suzuki">Maruti Suzuki</option>
-                        <option value="mercedes-benz">Mercedes-Benz</option>
-                        <option value="mg">MG</option>
-                        <option value="nissan">Nissan</option>
-                        <option value="renault">Renault</option>
-                        <option value="Skoda">Skoda</option>
-                        <option value="tata-motors">Tata Motors</option>
-                        <option value="toyota">Toyota</option>
-                        <option value="volkswagen">Volkswagen</option>
-                        <option value="volvo">Volvo</option>
-                </select>
+                <!-- <div class="car-brands">
+                        <a href="#Honda">Honda</a>
+                        <a href="#Hyundai">Hyundai</a>
+                        <a href="#Jeep">Jeep</a>
+                        <a href="#kia">Kia</a>
+                        <a href="#Land-Rover">Land Rover</a>
+                        <a href="#Mahindra">Mahindra</a>
+                        <a href="#Maruti-Suzuki">Maruti Suzuki</a>
+                        <a href="#mg">Morris Garages</a>
+                        <a href="#Nissan">Nissan</a>
+                        <a href="#Renault">Renault</a>
+                        <a href="#Skoda">Skoda</a>
+                        <a href="#Tata-Motors">Tata Motors</a>
+                        <a href="#Toyota">Toyota</a>
+                        <a href="#Volkswagen">Volkswagen</a>
+                        <a href="#Volvo">Volvo</a>
+                </div> -->
                 
-                <select id="car-types">
-                        <option value="#" selected>Select Car type</option>
-                        <option value="hatchback">Hatchback</option>
-                        <option value="sedan">Sedan</option>
-                        <option value="suv" selected>SUV</option>
-                        <option value="muv">MUV</option>
-                        <option value="luxury">Luxury</option>
-                        <option value="super-luxury">Super Luxury</option>
-                        <option value="convertible">Convertible</option>
-                        <option value="coupe">Coupe</option>
-                        <option value="pickup-truck">Pickup Truck</option>
-                        <option value="minivan">Minivan</option>
-                </select>
+                <!-- <div class="car-types">
+                        
+                        <a href="#Hatchback">Hatchback</a>
+                        <a href="#Sedan">Sedan</a>
+                        <a href="#SUV">SUV</a>
+                        <a href="#MUV">MUV</a>
+                        <a href="#Luxury">Luxury</a>
+                        <a href="#Convertible">Convertible</a>
+                        <a href="#Coupe">Coupe</a>
+                        <a href="#Minivan">Minivan</a>
+                </div> -->
                 
-                <select id="car-budgets">
-                        <option value="#" selected>Select Car Budget</option>
-                        <option value="1-5lakh">1 - 5 Lakh</option>
-                        <option value="5-10lakh">5 - 10 Lakh</option>
-                        <option value="10-15lakh">10 - 15 Lakh</option>
-                        <option value="15-20lakh" selected>15 - 20 Lakh</option>
-                        <option value="20-35lakh">20 - 35 Lakh</option>
-                        <option value="35-50lakh">35 - 50 Lakh</option>
-                        <option value="50lakh-1crore">50 Lakh - 1 Crore</option>
-                        <option value="above-1-crore">Above 1 Crore</option>
-                </select>
+                <!-- <div class="car-budgets">
+                        <a href="#1-5Lakh">1 - 5 Lakh</a>
+                        <a href="#5-10Lakh">5 - 10 Lakh</a>
+                        <a href="#10-15Lakh">10 - 15 Lakh</a>
+                        <a href="#15-20Lakh">15 - 20 Lakh</a>
+                        <a href="#20-35Lakh">20 - 35 Lakh</a>
+                        <a href="#35-50Lakh">35 - 50 Lakh</a>
+                        <a href="#50Lakh-1-Crore">50 Lakh - 1 Crore</a>
+                        <a href="#Above-1-Crore">Above 1 Crore</a>
+                </div> -->
                           
             </div>
         </div>
@@ -110,6 +129,45 @@
 
     <!----------------------------------------Content Start --------------------------------------------->
     <div id="content">
+        <div id="brandwise-cars">
+            <h1>Car Brands In India</h1>
+            <div class="brandlogos">
+                <div><a href="./Cars/4. Honda/honda.html"><img src="./Brand Logos/honda.webp" alt="Honda"></a></div>
+                <div><a href="./Cars/12. Hyundai/hyundai.html"><img src="./Brand Logos/hyundai.webp" alt="hyundai"></a></div>
+                <div><a href="./Cars/4. Jeep/jeep.html"><img src="./Brand Logos/jeep.webp" alt="jeep"></a></div>
+                <div><a href="./Cars/4. kia/kia.html"><img src="./Brand Logos/kia.webp" alt="kia"></a></div>
+                <div><a href="./Cars/7. Land Rover/landrover.html"><img src="./Brand Logos/land-rover.webp" alt="land-rover"></a></div>
+                <div><a href="./Cars/10. Mahindra/mahindra.html"><img src="./Brand Logos/mahindra.webp" alt="mahindra"></a></div>
+                <div><a href="./Cars/17. Maruti Suzuki/marutisuzuki.html"><img src="./Brand Logos/maruti.webp" alt="Maruti Suzuki"></a></div>
+                <div><a href="./Cars/4. MG/mg.html"><img src="./Brand Logos/mg.webp" alt="mg"></a></div>
+                <div><a href="./Cars/2. Nissan/nissan.html"><img src="./Brand Logos/nissan.webp" alt="nissan"></a></div>
+                <div><a href="./Cars/3. Renault/renault.html"><img src="./Brand Logos/renault.webp" alt="renault"></a></div>
+                <div><a href="./Cars/4. Skoda/skoda.html"><img src="./Brand Logos/skoda.webp" alt="skoda"></a></div>
+                <div><a href="./Cars/9. Tata Motors/tata.html"><img src="./Brand Logos/tata.webp" alt="Tata-Motors"></a></div>
+                <div><a href="./Cars/12. Toyota/toyota.html"><img src="./Brand Logos/toyota.webp" alt="toyota"></a></div>
+                <div><a href="./Cars/3. VolksWagen/volkswagen.html"><img src="./Brand Logos/volkswagen.webp" alt="volkswagen"></a></div>
+                <div><a href="./Cars/3. Volvo/volvo.html"><img src="./Brand Logos/volvo.webp" alt="volvo"></a></div>
+                <div><a href="#"><img src="./Brand Logos/bmw.webp" alt="bmw"></a></div>
+                <div><a href="#"><img src="./Brand Logos/porsche.webp" alt="Porche"></a></div>
+                <div><a href="#"><img src="./Brand Logos/rolls-royce.webp" alt="Rolls-Royce"></a></div>
+            </div>
+        </div>
+        <div class="Bodywise-search">
+            <div class="body-type">
+                <div><a href="#"><img src="./Body Types/hatchback_clr.svg" alt=""></a></div>
+                <div><a href="#"><img src="./Body Types/sedan_clr.svg" alt=""></a></div>
+                <div><a href="#"><img src="./Body Types/suv_clr.svg" alt=""></a></div>
+                <div><a href="#"><img src="./Body Types/coupe_clr.svg" alt="Luxury"></a></div>
+                <div><a href="#"><img src="./Body Types/convertible_clr.svg" alt=""></a></div>
+                <div><a href="#"><img src="./Body Types/coupe_clr.svg" alt=""></a></div>
+                <div><a href="#"><img src="./Body Types/van_clr.svg" alt=""></a></div>
+            </div>
+
+
+        </div>
+        <div class="ev-cars">
+ 
+        </div>
         
 
     </div>
@@ -117,63 +175,65 @@
 
 
     <!-------------  --------------------------Footer Start ---------------------------------------------->
-    <footer id="footer">
-        <hr>
-        <div class="footermain">
-            <div>
-                <h3>About Vehicals-Onroad</h3>
-                <a href="#">About</a><br>
-                <a href="#">Career With Us</a><br>
-                <a href="#">Terms & Conditions</a><br>
-                <a href="#">Privacy Policies</a><br>
-                <a href="#">Corporate Policies</a><br>
-                <a href="#">Investors</a><br>
-                <a href="#">FAQs</a><br>
+    <div id="bottom">
+        <footer id="footer">
+            <hr>
+            <div class="footermain">
+                <div>
+                    <h3>About Vehicals-Onroad</h3>
+                    <a href="#">About</a><br>
+                    <a href="#">Career With Us</a><br>
+                    <a href="#">Terms & Conditions</a><br>
+                    <a href="#">Privacy Policies</a><br>
+                    <a href="#">Corporate Policies</a><br>
+                    <a href="#">Investors</a><br>
+                    <a href="#">FAQs</a><br>
+                </div>
+                <div>
+                    <h3>Connect With Us</h3>
+                    <a href="#">Feedback</a><br>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Advertise with Us</a><br>
+                    <a href="#">Became Partner Dealer</a><br>
+                </div>
+                <div>
+                    <h3>Others</h3>
+                    <a href="#">Bike-Onroad</a><br>
+                    <a href="#">Bus-Onroad</a><br>
+                    <a href="#">Truck-Onroad</a><br>
+                    <a href="#">Tractors-Onroad</a><br>
+                    <a href="#">Insurance-Service</a><br>
+                    <a href="#">Car Sales Trends</a><br>
+                </div>
+                <div>
+                    <h3>Experience Vehicles-Onroad App</h3>
+                    <br>
+                    <a href="#"><img src="./appstore.avif" alt="appstore"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#"><img src="./playstore.avif" alt="playstore"></a>
+                </div>
             </div>
-            <div>
-                <h3>Connect With Us</h3>
-                <a href="#">Feedback</a><br>
-                <a href="#">Contact Us</a><br>
-                <a href="#">Advertise with Us</a><br>
-                <a href="#">Became Partner Dealer</a><br>
+            <hr>
+            <div class="footerbottom">
+                <span>
+                    <a href="#"><Strong>India/English</Strong></a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Legal</a>
+                    <a href="#">CSR Policy</a>
+                    <a href="#">Sitemap</a>
+                </span>
+                <span>
+                    <a href="#">Connect With Us:</a>
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #000000;"></i></a>
+                </span>
             </div>
-            <div>
-                <h3>Others</h3>
-                <a href="#">Bike-Onroad</a><br>
-                <a href="#">Bus-Onroad</a><br>
-                <a href="#">Truck-Onroad</a><br>
-                <a href="#">Tractors-Onroad</a><br>
-                <a href="#">Insurance-Service</a><br>
-                <a href="#">Car Sales Trends</a><br>
-            </div>
-            <div>
-                <h3>Experience Vehicles-Onroad App</h3>
-                <br>
-                <a href="#"><img src="./appstore.avif" alt="appstore"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#"><img src="./playstore.avif" alt="playstore"></a>
-            </div>
-        </div>
-        <hr>
-        <div class="footerbottom">
-            <span>
-                <a href="#"><Strong>India/English</Strong></a>
-                <a href="#">Privacy</a>
-                <a href="#">Legal</a>
-                <a href="#">CSR Policy</a>
-                <a href="#">Sitemap</a>
-            </span>
-            <span>
-                <a href="#">Connect With Us:</a>
-                <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #000000;"></i></a>
-            </span>
-        </div>
-    </footer>
-        <!--------------------------------------------Footer End ------------------------------------------------>
+        </footer>
+    </div>
+            <!--------------------------------------------Footer End ------------------------------------------------>
 
 </body>
 </html>
