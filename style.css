@@ -148,12 +148,12 @@
   margin-top: 0.5vh;
   height: 95vh;
   width: 100%;
-  background-image: url("/backimg.jpg");
+  background-image: url("/home hero sec.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 #hero .hero {
   height: 95vh;
@@ -213,7 +213,7 @@
 }
 
 #brandwise-cars h1 {
-  margin: 5vh;
+  margin-bottom: 5vh;
   margin-left: 5vw;
 }
 #brandwise-cars .brandlogos {

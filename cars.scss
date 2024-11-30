@@ -3,14 +3,30 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 #header{
 @include headnav();
 }
 
+.filter{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: beige;
+    position: sticky;
+    
+    #filtr{
+        margin-top: .5vh;
+        margin-bottom: 1.5vh;
+        height: 4vh;
+        width: 18vw;
+    }
+}
+
 
 #brand{
-    margin-top: 5vh;
+    margin-top: 2vh;
+
     h1{
         height: auto;
         margin: 1%;
@@ -51,12 +67,14 @@
             }
             .dispcar:hover{
                 background-color:rgb(155, 150, 149);
-                transform: scale(1.05);
+                box-shadow: 2px 2px 3px 2px red;
+                transform: scale(1.03);
                 transition: all 0.3s;
             }
         }
     }
 }
+
 
 #bottom{
     @include footer();

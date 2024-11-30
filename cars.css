@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #header #navbar {
@@ -143,8 +144,21 @@
   display: block;
 }
 
+.filter {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background-color: beige;
+  position: sticky;
+}
+.filter #filtr {
+  margin-top: 0.5vh;
+  margin-bottom: 1.5vh;
+  height: 4vh;
+  width: 18vw;
+}
+
 #brand {
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 #brand h1 {
   height: auto;
@@ -185,7 +199,8 @@
 }
 #brand .brand .brand-cars .dispcar:hover {
   background-color: rgb(155, 150, 149);
-  transform: scale(1.05);
+  box-shadow: 2px 2px 3px 2px red;
+  transform: scale(1.03);
   transition: all 0.3s;
 }
 
