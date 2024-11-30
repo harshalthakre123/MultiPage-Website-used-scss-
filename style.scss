@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 #header{
     @include headnav();
@@ -11,9 +12,10 @@
 
 // Hero Section Start------------------------------------------------------------------------------------
 #hero{
+    margin-top: 0.5vh;
     height: 95vh;
     width: 100%;
-    background-image: url('/home\ hero\ sec.jpg');
+    background-image: url('/backimg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +23,7 @@
     margin-bottom: 10vh;
     .hero{
         height: 95vh;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.20);
         color: white;
         justify-items: center;
         text-align: center;
@@ -33,7 +35,7 @@
         .hero-search{
             height: 20vh;
             width: 32vw;
-            background-color: rgba(58, 57, 57, 0.226);
+            background-color: rgba(41, 40, 40, 0.411);
             justify-items: center;
             line-height: 35px;
             
@@ -44,41 +46,41 @@
                 font-size: 20px;
                 margin-right: 15px;
             }
-            // #car-brands{
-            //     display: none;
-            //     width: 28vw;
-            //     height: 5vh;
-            //     text-align: center;
-            //     font-size: large;
-            // }
+            #car-brands{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
             
-            // #car-brand:checked~#car-brands{
-            //     display: block;
-            // }
+            #car-brand:checked~#car-brands{
+                display: block;
+            }
             
-            // #car-types{
-            //     display: none;
-            //     width: 28vw;
-            //     height: 5vh;
-            //     text-align: center;
-            //     font-size: large;
-            // }
+            #car-types{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
             
-            // #car-type:checked~#car-types{
-            //     display: block;
-            // }
+            #car-type:checked~#car-types{
+                display: block;
+            }
             
-            // #car-budgets{
-            //     display: none;
-            //     width: 28vw;
-            //     height: 5vh;
-            //     text-align: center;
-            //     font-size: large;
-            // }
+            #car-budgets{
+                display: none;
+                width: 28vw;
+                height: 5vh;
+                text-align: center;
+                font-size: large;
+            }
             
-            // #car-budget:checked~#car-budgets{
-            //     display: block;
-            // }
+            #car-budget:checked~#car-budgets{
+                display: block;
+            }
                           
          
         }
@@ -92,59 +94,68 @@
         margin-left: 5vw;
     }
     .brandlogos{
+        background-color: rgb(231, 231, 231);
+        margin-left: 4vw;
+        margin-right: 4.6vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+        div{
+            width: 15vw;
+            height: 20.5vh;
+            border: .5px solid black;  
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                img{
+                    margin-left: 18px;
+                    margin-top: 4px;
+                }    
+            
+            }      
+        }
+        div:hover{
+            background-color: rgb(255, 208, 1);
+            transform: scale(1.2);
+            transition: all 0.5s;
+            z-index: 5;
+        }          
+    } 
+}
+
+#bodywise-search{
+    h1{
+        margin: 5vh;
+        margin-left: 5vw;
+    }
+    .body-type{
+        background-color: rgb(231, 231, 231);
         margin-left: 4vw;
         margin-right: 4vw;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 10vh;
         div{
-            padding-left: 15px;
+            padding: 3.75vh;
             width: 15vw;
-            height: 15vh;
-            border: .5px solid black;            
+            height: 20.5vh;
+            border: .5px solid black; 
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: black
+            }           
         }
+        div:hover{
+            background-color: rgb(255, 208, 1);
+            transform: scale(1.2);
+            transition: all 0.5s;
+            z-index: 5;
         
-    }                                                                                                                                                                                                                                                                                                   
+        }
+    }                                                                                                                           
 }
-
 #bottom{
     @include footer();
 }
-
-
-// #footer{
-//     margin-top: 10vh;
-//     margin-left: 3vw;
-//     margin-right: 3vw;
-//     .footermain{
-//         margin-top: 8vh;
-//         height: 45vh;
-//         display: flex; 
-//         div{
-//             width: 55vh;
-//             line-height: 25px;
-//             a{
-//                 color: rgb(94, 93, 93);
-//                 text-decoration: none;
-//             }
-//         }
-//         .footermain div a:hover{
-//             color: blue;
-//             text-decoration: underline;
-//             }
-//     }
-//     .footerbottom{
-//         height: 10vh;
-//         display: flex;
-//         justify-content:space-between;
-//         align-items: center;
-//         margin-left: 3vw;
-//         margin-right: 3vw;
-//         span{
-//             a{
-//                 text-decoration: none;
-//                 color: black;
-//                 margin: 5px;
-//             }
-//         }
-//     }
-// } 

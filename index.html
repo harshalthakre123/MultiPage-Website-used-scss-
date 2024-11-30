@@ -28,8 +28,8 @@
                 <li class="nc"><a href="#">New Cars<i class="fa-solid fa-angle-down" style="color: #1e3050;"></i> </a>
                     <div class="nc-dd">
                         <a href="#brandwise-cars">Car Brands</a><br>
-                        <a href="#">Body Types</a><br>
-                        <a href="#">Electric Cars</a><br>
+                        <a href="#bodywise-search">Body Types</a><br>
+                        <a href="./Cars/electric.html">Electric Cars</a><br>
                         <a href="#">New Launched Cars</a><br>
                         <a href="#">Upcoming Cars</a><br>
                         <a href="#">Find Car Dealer</a><br>
@@ -52,7 +52,22 @@
                     </div>
                 </li>
             </ul>
-            <a class="location" href="#location">Location <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a>
+            <div id="locate">
+                <a href="#">Location <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a>
+                <div class="location-dd">
+                    <a href="#">Bhopal</a><br>
+                    <a href="#">Bairagarh</a><br>   
+                    <a href="#">Betul</a><br>   
+                    <a href="#">Balaghat</a><br>    
+                    <a href="#">Chindwara</a><br>   
+                    <a href="#">Goharganj</a><br>   
+                    <a href="#">Indore</a><br>  
+                    <a href="#">Itarsi</a><br>  
+                    <a href="#">Jabalpur</a><br>    
+                    <a href="#">Narmadapuram</a><br>    
+                    <a href="#">Obedullahganj</a> 
+                </div>
+            </div>
             
 
         </nav>
@@ -70,7 +85,7 @@
 
                 <label for="searchtype"></label>
 
-                <input type="radio" id="car-brand" name="searchtype" value="Choose Car Brand">
+                <input type="radio" id="car-brand" name="searchtype" value="Choose Car Brand" checked>
                 <label for="car-brand"><strong>By Brand</strong></label>
 
                 <input type="radio" id="car-type" name="searchtype" value="Choose Body Type">
@@ -81,46 +96,48 @@
                 
                 <br>
                 
-                <!-- <div class="car-brands">
-                        <a href="#Honda">Honda</a>
-                        <a href="#Hyundai">Hyundai</a>
-                        <a href="#Jeep">Jeep</a>
-                        <a href="#kia">Kia</a>
-                        <a href="#Land-Rover">Land Rover</a>
-                        <a href="#Mahindra">Mahindra</a>
-                        <a href="#Maruti-Suzuki">Maruti Suzuki</a>
-                        <a href="#mg">Morris Garages</a>
-                        <a href="#Nissan">Nissan</a>
-                        <a href="#Renault">Renault</a>
-                        <a href="#Skoda">Skoda</a>
-                        <a href="#Tata-Motors">Tata Motors</a>
-                        <a href="#Toyota">Toyota</a>
-                        <a href="#Volkswagen">Volkswagen</a>
-                        <a href="#Volvo">Volvo</a>
-                </div> -->
-                
-                <!-- <div class="car-types">
-                        
-                        <a href="#Hatchback">Hatchback</a>
-                        <a href="#Sedan">Sedan</a>
-                        <a href="#SUV">SUV</a>
-                        <a href="#MUV">MUV</a>
-                        <a href="#Luxury">Luxury</a>
-                        <a href="#Convertible">Convertible</a>
-                        <a href="#Coupe">Coupe</a>
-                        <a href="#Minivan">Minivan</a>
-                </div> -->
-                
-                <!-- <div class="car-budgets">
-                        <a href="#1-5Lakh">1 - 5 Lakh</a>
-                        <a href="#5-10Lakh">5 - 10 Lakh</a>
-                        <a href="#10-15Lakh">10 - 15 Lakh</a>
-                        <a href="#15-20Lakh">15 - 20 Lakh</a>
-                        <a href="#20-35Lakh">20 - 35 Lakh</a>
-                        <a href="#35-50Lakh">35 - 50 Lakh</a>
-                        <a href="#50Lakh-1-Crore">50 Lakh - 1 Crore</a>
-                        <a href="#Above-1-Crore">Above 1 Crore</a>
-                </div> -->
+                <select id="car-brands">
+                    <option value="#">Select Car Brand</option>
+                    <option value="#Honda">Honda</option>
+                    <option value="#Hyundai">Hyundai</option>
+                    <option value="#Jeep">Jeep</option>
+                    <option value="#kia">Kia</option>
+                    <option value="#Land-Rover">Land Rover</option>
+                    <option value="#Mahindra">Mahindra</option>
+                    <option value="#Maruti-Suzuki">Maruti Suzuki</option>
+                    <option value="#mg">Morris Garages</option>
+                    <option value="#Nissan">Nissan</option>
+                    <option value="#Renault">Renault</option>
+                    <option value="#Skoda">Skoda</option>
+                    <option value="#Tata-Motors">Tata Motors</option>
+                    <option value="#Toyota">Toyota</option>
+                    <option value="#Volkswagen">Volkswagen</option>
+                    <option value="#Volvo">Volvo</option>
+                </select>
+
+                <select id="car-types">
+                    <option value="#">Select Body Type</option>
+                    <option value="#Hatchback">Hatchback</option>
+                    <option value="#Sedan">Sedan</option>
+                    <option value="#SUV">SUV</option>
+                    <option value="#MUV">MUV</option>
+                    <option value="#Luxury">Luxury</option>
+                    <option value="#Convertible">Convertible</option>
+                    <option value="#Coupe">Coupe</option>
+                    <option value="#Minivan">Minivan</option>
+                </select>
+
+                <select id="car-budgets">
+                    <option value="#">Select Car Budget</option>
+                    <option value="#1-5Lakh">1 - 5 Lakh</option>
+                    <option value="#5-10Lakh">5 - 10 Lakh</option>
+                    <option value="#10-15Lakh">10 - 15 Lakh</option>
+                    <option value="#15-20Lakh">15 - 20 Lakh</option>
+                    <option value="#20-35Lakh">20 - 35 Lakh</option>
+                    <option value="#35-50Lakh">35 - 50 Lakh</option>
+                    <option value="#50Lakh-1-Crore">50 Lakh - 1 Crore</option>
+                    <option value="#Above-1-Crore">Above 1 Crore</option>
+                </select>
                           
             </div>
         </div>
@@ -132,35 +149,36 @@
         <div id="brandwise-cars">
             <h1>Car Brands In India</h1>
             <div class="brandlogos">
-                <div><a href="./Cars/4. Honda/honda.html"><img src="./Brand Logos/honda.webp" alt="Honda"></a></div>
-                <div><a href="./Cars/12. Hyundai/hyundai.html"><img src="./Brand Logos/hyundai.webp" alt="hyundai"></a></div>
-                <div><a href="./Cars/4. Jeep/jeep.html"><img src="./Brand Logos/jeep.webp" alt="jeep"></a></div>
-                <div><a href="./Cars/4. kia/kia.html"><img src="./Brand Logos/kia.webp" alt="kia"></a></div>
-                <div><a href="./Cars/7. Land Rover/landrover.html"><img src="./Brand Logos/land-rover.webp" alt="land-rover"></a></div>
-                <div><a href="./Cars/10. Mahindra/mahindra.html"><img src="./Brand Logos/mahindra.webp" alt="mahindra"></a></div>
-                <div><a href="./Cars/17. Maruti Suzuki/marutisuzuki.html"><img src="./Brand Logos/maruti.webp" alt="Maruti Suzuki"></a></div>
-                <div><a href="./Cars/4. MG/mg.html"><img src="./Brand Logos/mg.webp" alt="mg"></a></div>
-                <div><a href="./Cars/2. Nissan/nissan.html"><img src="./Brand Logos/nissan.webp" alt="nissan"></a></div>
-                <div><a href="./Cars/3. Renault/renault.html"><img src="./Brand Logos/renault.webp" alt="renault"></a></div>
-                <div><a href="./Cars/4. Skoda/skoda.html"><img src="./Brand Logos/skoda.webp" alt="skoda"></a></div>
-                <div><a href="./Cars/9. Tata Motors/tata.html"><img src="./Brand Logos/tata.webp" alt="Tata-Motors"></a></div>
-                <div><a href="./Cars/12. Toyota/toyota.html"><img src="./Brand Logos/toyota.webp" alt="toyota"></a></div>
-                <div><a href="./Cars/3. VolksWagen/volkswagen.html"><img src="./Brand Logos/volkswagen.webp" alt="volkswagen"></a></div>
-                <div><a href="./Cars/3. Volvo/volvo.html"><img src="./Brand Logos/volvo.webp" alt="volvo"></a></div>
-                <div><a href="#"><img src="./Brand Logos/bmw.webp" alt="bmw"></a></div>
-                <div><a href="#"><img src="./Brand Logos/porsche.webp" alt="Porche"></a></div>
-                <div><a href="#"><img src="./Brand Logos/rolls-royce.webp" alt="Rolls-Royce"></a></div>
+                <div><a href="./Cars/4. Honda/honda.html"><img src="./Brand Logos/honda.webp" alt="Honda"><br><h2>Honda</h2></a></div>
+                <div><a href="./Cars/12. Hyundai/hyundai.html"><img src="./Brand Logos/hyundai.webp" alt="hyundai"><br><h2>Hyundai</h2></a></div>
+                <div><a href="./Cars/4. Jeep/jeep.html"><img src="./Brand Logos/jeep.webp" alt="jeep"><br><h2>Jeep</h2></a></div>
+                <div><a href="./Cars/4. kia/kia.html"><img src="./Brand Logos/kia.webp" alt="kia"><br><h2>Kia</h2></a></div>
+                <div><a href="./Cars/7. Land Rover/landrover.html"><img src="./Brand Logos/land-rover.webp" alt="land-rover"><br><h2>Land Rover</h2></a></div>
+                <div><a href="./Cars/10. Mahindra/mahindra.html"><img src="./Brand Logos/mahindra.webp" alt="mahindra"><br><h2>Mahindra</h2></a></div>
+                <div><a href="./Cars/17. Maruti Suzuki/marutisuzuki.html"><img src="./Brand Logos/maruti.webp" alt="Maruti Suzuki"><br><h2>Maruti Suzuki</h2></a></div>
+                <div><a href="./Cars/4. MG/mg.html"><img src="./Brand Logos/mg.webp" alt="mg"><br><h2>Morris Garages</h2></a></div>
+                <div><a href="./Cars/2. Nissan/nissan.html"><img src="./Brand Logos/nissan.webp" alt="nissan"><br><h2>Nissan</h2></a></div>
+                <div><a href="./Cars/3. Renault/renault.html"><img src="./Brand Logos/renault.webp" alt="renault"><br><h2>Renault</h2></a></div>
+                <div><a href="./Cars/4. Skoda/skoda.html"><img src="./Brand Logos/skoda.webp" alt="skoda"><br><h2>Skoda</h2></a></div>
+                <div><a href="./Cars/9. Tata Motors/tata.html"><img src="./Brand Logos/tata.webp" alt="Tata-Motors"><br><h2>Tata Motors</h2></a></div>
+                <div><a href="./Cars/12. Toyota/toyota.html"><img src="./Brand Logos/toyota.webp" alt="toyota"><br><h2>Toyota</h2></a></div>
+                <div><a href="./Cars/3. VolksWagen/volkswagen.html"><img src="./Brand Logos/volkswagen.webp" alt="volkswagen"><br><h2>VolksWagen</h2></a></div>
+                <div><a href="./Cars/3. Volvo/volvo.html"><img src="./Brand Logos/volvo.webp" alt="volvo"><br><h2>Volvo</h2></a></div>
+                <div><a href="#"><img src="./Brand Logos/bmw.webp" alt="bmw"><br><h2>BMW</h2></a></div>
+                <div><a href="#"><img src="./Brand Logos/porsche.webp" alt="Porche"><br><h2>Porche</h2></a></div>
+                <div><a href="#"><img src="./Brand Logos/rolls-royce.webp" alt="Rolls-Royce"><br><h2>Rolls-Royce</h2></a></div>
             </div>
         </div>
-        <div class="Bodywise-search">
+        <div id="bodywise-search">
+            <h1>Choose Car by Body Type</h1>
             <div class="body-type">
-                <div><a href="#"><img src="./Body Types/hatchback_clr.svg" alt=""></a></div>
-                <div><a href="#"><img src="./Body Types/sedan_clr.svg" alt=""></a></div>
-                <div><a href="#"><img src="./Body Types/suv_clr.svg" alt=""></a></div>
-                <div><a href="#"><img src="./Body Types/coupe_clr.svg" alt="Luxury"></a></div>
-                <div><a href="#"><img src="./Body Types/convertible_clr.svg" alt=""></a></div>
-                <div><a href="#"><img src="./Body Types/coupe_clr.svg" alt=""></a></div>
-                <div><a href="#"><img src="./Body Types/van_clr.svg" alt=""></a></div>
+                <div><a href="./Cars/suvs.html"><img src="./Body Types/suv_clr.svg" alt="Suvs" width="150px" height="65px"><br><h2>SUVs</h2></a></div>
+                <div><a href="./Cars/sedan.html"><img src="./Body Types/sedan_clr.svg" alt="Sedan" width="150px" height="65px"><br><h2>Sedan</h2></a></div>
+                <div><a href="./Cars/hatchback.html"><img src="./Body Types/hatchback_clr.svg" alt="Hatchback" width="150px" height="65px"><br><h2>Hatchback</h2></a></div>
+                <div><a href="./Cars/mpv.html"><img src="./Body Types/suv_clr.svg" alt="MPV" width="150px" height="65px"><br><h2>MPV</h2></a></div>
+                <div><a href="#"><img src="./Body Types/convertible_clr.svg" alt="Convertible" width="150px" height="65px"><br><h2>Convertible</h2></a></div>
+                <div><a href="#"><img src="./Body Types/coupe_clr.svg" alt="Coupe" width="150px" height="65px"><br><h2>Coupe</h2></a></div>
+                <!-- <div><a href="#"><img src="./Body Types/van_clr.svg" alt="Minivan" width="150px" height="100px"><br><h2>Minivan</h2></a></div> -->
             </div>
 
 
